@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice 1</title>
+    </head>
+    <body>
+        <script>
+            // <p id="intro">
+            //     Hello there you are <strong>manipulating</strong> the dom
+            // </p>
+
+            const p = document.createElement("p");
+            p.setAttribute("id", "intro");//esta parte se llama key, value
+
+            const strong = document.createElement("strong");
+                strong.textContent = "manipulating"
+            p.textContent = "Hello there you are "
+            p.append(strong);
+            p.append(" the DOM");
+            document.body.append(p)
+        </script>
+    </body>
+</html>
